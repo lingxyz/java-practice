@@ -1,4 +1,4 @@
-package com.example.springboot;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,7 +14,8 @@ public class DemoApplication {
     SpringApplication.run(DemoApplication.class, args);
   }
   /**
-   * Open broswer at http://localhost:8080.
+   * Curl http://localhost:8080.
+   * return String
    */
   @GetMapping("/")
   public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
